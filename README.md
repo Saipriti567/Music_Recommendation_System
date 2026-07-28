@@ -119,17 +119,6 @@ The frontend will open in your browser.
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-(Add screenshot here)
-
-### Recommendation Result
-
-(Add screenshot here)
-
----
 
 ## 🔮 Future Enhancements
 
@@ -137,14 +126,6 @@ The frontend will open in your browser.
 - Artist-based recommendation
 - Genre filtering
 - User authentication
-- Cloud deployment
 
 ---
 
-## 👩‍💻 Author
-
-**Purabi Baghasingh**
-
-Electrical & Electronics Engineering
-
-Silicon University
