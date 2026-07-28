@@ -1,34 +1,36 @@
-# 🎵 Music Recommendation System
+# 🎵 AI Music Recommendation Platform
 
-A Machine Learning-based Music Recommendation System built using Python and Streamlit that recommends Bollywood songs based on similarity and user preferences.
-
-## 📌 Overview
-
-This project uses content-based filtering techniques to recommend songs similar to the user's selected song. The recommendation engine analyzes song metadata and similarity scores to provide relevant music suggestions.
-
-The application is built with Streamlit, providing an interactive and user-friendly interface.
+An AI-powered music recommendation web application that recommends similar Bollywood songs using Machine Learning. The project uses a FastAPI backend and a responsive frontend built with HTML, CSS and JavaScript.
 
 ---
 
 ## 🚀 Features
 
-- Search songs by name
-- Get similar song recommendations
-- Interactive Streamlit web interface
-- Fast recommendation generation
-- Content-based filtering approach
-- Uses precomputed similarity matrices for efficient predictions
+- 🎵 AI-based Bollywood song recommendation
+- 🔍 Case-insensitive song search
+- ✨ Autocomplete search suggestions
+- ⌨️ Press Enter to search
+- 🎶 Displays the selected song
+- 🎧 Shows similar recommended songs
+- ⚡ FastAPI REST API
+- 💻 Responsive frontend using HTML, CSS and JavaScript
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Tech Stack
 
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- FastAPI
 - Python
-- Streamlit
+
+### Machine Learning
 - Pandas
-- NumPy
 - Scikit-learn
-- TF-IDF Vectorization
 - Pickle
 
 ---
@@ -36,62 +38,48 @@ The application is built with Streamlit, providing an interactive and user-frien
 ## 📂 Project Structure
 
 ```text
-Music_Recommendation_System/
+AI Music Recommendation System
 │
-├── app.py
-├── model.ipynb
-├── Bollywood_Songs_With_Album_Genre.csv
-├── songs_df.pkl
-├── similarity_df.pkl
-├── tfidf_df.pkl
+├── backend/
+│   ├── routers/
+│   ├── services/
+│   └── main.py
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── dataset/
+│   └── Bollywood_Songs_With_Album_Genre.csv
+│
+├── ml/
+│   ├── songs_df.pkl
+│   ├── similarity_df.pkl
+│   ├── tfidf_df.pkl
+│   └── model.ipynb
+│
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
-
----
-
-## 📊 Dataset
-
-The dataset contains Bollywood songs along with metadata such as:
-
-- Song Name
-- Album Name
-- Genre
-
-The recommendation engine uses this information to calculate song similarity and generate recommendations.
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the Repository
+Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Music_Recommendation_System.git
-cd Music_Recommendation_System
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 ```
 
-### Create Virtual Environment
+Move into the project directory
 
 ```bash
-python -m venv venv
+cd AI-Music-Recommendation-System
 ```
 
-### Activate Virtual Environment
-
-#### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-#### Linux/Mac
-
-```bash
-source venv/bin/activate
-```
-
-### Install Dependencies
+Install the dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -99,38 +87,64 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Run the Backend
 
 ```bash
-streamlit run app.py
+uvicorn backend.main:app --reload
 ```
 
-After running the command, open the local URL displayed in the terminal.
+The backend will start at
+
+```
+http://127.0.0.1:8000
+```
 
 ---
 
-## 🧠 Machine Learning Approach
+## ▶️ Run the Frontend
 
-1. Data Preprocessing
-2. Text Cleaning
-3. TF-IDF Vectorization
-4. Similarity Matrix Generation
-5. Content-Based Recommendation
+Open the **frontend** folder using **Live Server** in Visual Studio Code.
 
-The system identifies songs that are most similar to the selected song and displays personalized recommendations.
+The frontend will open in your browser.
 
 ---
 
-## 📈 Future Improvements
+## 📡 API Endpoints
 
-- Spotify API Integration
-- Artist-Based Recommendations
-- Mood-Based Recommendations
-- Album Recommendations
-- Personalized User Profiles
-- Music Preview Support
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/` | Home |
+| GET | `/recommend/songs` | Returns all songs |
+| GET | `/recommend/{song_name}` | Returns similar songs |
 
 ---
 
+## 📸 Screenshots
 
-## ⭐ If you found this project useful, consider giving it a star!
+### Home Page
+
+(Add screenshot here)
+
+### Recommendation Result
+
+(Add screenshot here)
+
+---
+
+## 🔮 Future Enhancements
+
+- Playlist recommendation
+- Artist-based recommendation
+- Genre filtering
+- User authentication
+- Cloud deployment
+
+---
+
+## 👩‍💻 Author
+
+**Purabi Baghasingh**
+
+Electrical & Electronics Engineering
+
+Silicon University
