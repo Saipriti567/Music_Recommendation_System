@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Recommendation Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎵 AI Music Recommendation Platform</h1>
+
+        <p class="subtitle">
+            Discover similar Bollywood songs using Machine Learning
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="songInput"
+                placeholder="Enter Song Name"
+                autocomplete="off">
+
+            <!-- Autocomplete suggestions -->
+            <div id="suggestions"></div>
+
+            <button id="recommendBtn">
+                Recommend
+            </button>
+
+        </div>
+
+        <!-- Recommendation Results -->
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
